@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+final navigatorKey = GlobalKey<NavigatorState>();
+
 mixin KDialogsMixin {
   showKDialog(
     BuildContext context, {

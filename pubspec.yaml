@@ -1,7 +1,7 @@
 name: a01r066
-description: A new Flutter plugin project.
+description: Fancy pre-built flutter plugin that can easily be integrated into any Flutter application.
 version: 0.0.1
-homepage:
+homepage: 'https://github.com/a01r066/a01r066_flutter_plugin'
 
 environment:
   sdk: '>=2.19.2 <3.0.0'

@@ -1,9 +1,11 @@
+import 'package:a01r066_example/gen/localization/l10n.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter/services.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:a01r066/a01r066.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +21,8 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> with KDialogsMixin {
   String _platformVersion = 'Unknown';
   final _a01r066FlutterPlugin = A01r066();
+
+  final navigatorKey = GlobalKey<NavigatorState>();
 
   @override
   void initState() {
@@ -52,6 +56,19 @@ class _MyAppState extends State<MyApp> with KDialogsMixin {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
+        navigatorKey: navigatorKey,
+        // localizationsDelegates: AppLocalizations.localizationsDelegates,
+        localizationsDelegates: const [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        // supportedLocales: [
+        //   Locale('en', ''), // English, no country code
+        //   Locale('es', ''), // Spanish, no country code
+        // ],
+        supportedLocales: S.delegate.supportedLocales,
         builder: (BuildContext context, Widget? child) {
           // Prevent system preferred font size
           Widget fixedFontSizeWidget = MediaQuery(
