@@ -107,7 +107,7 @@ class _MyAppState extends State<MyApp> with KDialogsMixin {
                       builder: (_, snapshot) {
                         return Text(
                           "Native code: ${snapshot.data}" ?? "",
-                          style: const TextStyle(color: AppColors.error),
+                          style: const TextStyle(color: KColors.error),
                         );
                       }),
                 ]))));

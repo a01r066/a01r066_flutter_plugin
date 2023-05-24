@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AppColors {
-  AppColors._();
+class KColors {
+  KColors._();
 
   static const Color vzLight50 = Color(0xFFFAFAFA);
   static const Color vzLight100 = Color(0xFFF5F5F5);
