@@ -1,0 +1,22 @@
+PODS:
+  - a01r066 (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - a01r066 (from `.symlinks/plugins/a01r066/ios`)
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  a01r066:
+    :path: ".symlinks/plugins/a01r066/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  a01r066: 84d58b9367a6257661ffdf5ed04dc9246b67d297
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+
+PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
+
+COCOAPODS: 1.11.3
