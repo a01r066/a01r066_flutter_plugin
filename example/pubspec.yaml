@@ -34,7 +34,7 @@ dependencies:
   # Localization
   flutter_localizations:
     sdk: flutter
-  intl: any
+  intl: ^0.17.0
   intl_utils: ^2.6.1
 
   # Bloc

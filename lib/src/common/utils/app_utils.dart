@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'dart:math';
 import 'package:a01r066/a01r066.dart';
-import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -128,120 +127,5 @@ class KUtils {
       'z'
     ];
     return alphabet[index].toUpperCase();
-  }
-
-  static String removeNonASCII(String str) {
-    final arrCharactorData = [
-      [
-        "á",
-        "à",
-        "ả",
-        "ã",
-        "ạ",
-        "ă",
-        "ắ",
-        "ằ",
-        "ẳ",
-        "ẵ",
-        "ặ",
-        "â",
-        "ấ",
-        "ầ",
-        "ẩ",
-        "ẫ",
-        "ậ"
-      ],
-      [
-        "Á",
-        "À",
-        "Ả",
-        "Ã",
-        "Ạ",
-        "Ă",
-        "Ắ",
-        "Ằ",
-        "Ẳ",
-        "Ẵ",
-        "Ặ",
-        "Â",
-        "Ấ",
-        "Ầ",
-        "Ẩ",
-        "Ẫ",
-        "Ậ"
-      ],
-      ["é", "è", "ẻ", "ẽ", "ẹ", "ê", "ế", "ề", "ể", "ễ", "ệ"],
-      ["É", "È", "Ẻ", "Ẽ", "Ẹ", "Ê", "Ế", "Ề", "Ể", "Ễ", "Ệ"],
-      [
-        "ó",
-        "ò",
-        "ỏ",
-        "õ",
-        "ọ",
-        "ô",
-        "ố",
-        "ồ",
-        "ổ",
-        "ỗ",
-        "ộ",
-        "ơ",
-        "ớ",
-        "ờ",
-        "ở",
-        "ỡ",
-        "ợ"
-      ],
-      [
-        "Ó",
-        "Ò",
-        "Ỏ",
-        "Õ",
-        "Ọ",
-        "Ô",
-        "Ố",
-        "Ồ",
-        "Ổ",
-        "Ỗ",
-        "Ộ",
-        "Ơ",
-        "Ớ",
-        "Ờ",
-        "Ở",
-        "Ỡ",
-        "Ợ"
-      ],
-      ["í", "ì", "ỉ", "ĩ", "ị"],
-      ["Í", "Ì", "Ỉ", "Ĩ", "Ị"],
-      ["ú", "ù", "ủ", "ũ", "ụ", "ư", "ứ", "ừ", "ử", "ữ", "ự"],
-      ["Ú", "Ù", "Ủ", "Ũ", "Ụ", "Ư", "Ứ", "Ừ", "Ử", "Ữ", "Ự"],
-      ["ý", "ỳ", "ỷ", "ỹ", "ỵ"],
-      ["Ý", "Ỳ", "Ỷ", "Ỹ", "Ỵ"],
-      ["đ"],
-      ["Đ"],
-    ];
-
-    final arrResultsCharactorData = [
-      "a",
-      "A",
-      "e",
-      "E",
-      "o",
-      "O",
-      "i",
-      "I",
-      "u",
-      "U",
-      "y",
-      "Y",
-      "d",
-      "D"
-    ];
-    String result = str;
-    arrCharactorData.forEachIndexed((index, element) {
-      for (var element in element) {
-        result = result.replaceAll(element, arrResultsCharactorData[index]);
-      }
-    });
-    return result;
   }
 }

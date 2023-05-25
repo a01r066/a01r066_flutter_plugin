@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'dart:math' as Math;
+import 'dart:math' as math;
 import 'dart:ui' as ui;
 
 class KDevices {
@@ -63,8 +63,8 @@ class KDevices {
     if (isAndroid) {
       final adjustedWidth = _calWidth() / devicePixelRatio;
       final adjustedHeight = _calHeight() / devicePixelRatio;
-      final diagonalSizeInches = (Math.sqrt(
-              Math.pow(adjustedWidth, 2) + Math.pow(adjustedHeight, 2))) /
+      final diagonalSizeInches = (math
+              .sqrt(math.pow(adjustedWidth, 2) + math.pow(adjustedHeight, 2))) /
           _ppi;
       //print("Dialog size inches is $diagonalSizeInches");
       if (diagonalSizeInches >= 7) {

@@ -1,6 +1,6 @@
 name: a01r066
 description: Fancy pre-built flutter plugin that can easily be integrated into any Flutter application.
-version: 0.0.1
+version: 0.0.2
 homepage: 'https://github.com/a01r066/a01r066_flutter_plugin'
 
 environment:
@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
-  intl: any
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
